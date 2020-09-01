@@ -2,23 +2,23 @@ var express = require("express");
 var router = express.Router();
 
 //userAPI
-const userAPI = require("./userAPI");
+const userAPI = require("./userApi");
 router.use("/users", userAPI);
 
 //authAPI
-const authAPI = require("./authAPI");
+const authAPI = require("./authApi");
 router.use("/auth", authAPI);
 
 //blogAPI
-const blogAPI = require("./blogAPI");
+const blogAPI = require("./blogApi");
 router.use("/blogs", blogAPI);
 
 //blogAPI
-const reviewAPI = require("./reviewAPI");
+const reviewAPI = require("./reviewApi");
 router.use("/reviews", reviewAPI);
 
 //reactionAPI
-const reactionAPI = require("./reactionAPI");
+const reactionAPI = require("./reactionApi");
 router.use("/reactions", reactionAPI);
 
 //friendshipAPI
